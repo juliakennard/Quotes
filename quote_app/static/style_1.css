@@ -1,0 +1,56 @@
+#wrapper {
+    width: 970px;
+    margin: 0px auto;
+    font-family: sans-serif;
+}
+
+#main_content {
+    display: flex;
+}
+
+#errors {
+    color: red;
+}
+
+#registration, #login_user {
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 150px;
+}
+
+label, input {
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+input {
+    border: 2px solid black;
+    margin-left: 10px;
+    height: 20px;
+}
+
+.form {
+    display: flex;
+    justify-content: space-between;
+}
+
+h2 {
+    margin-left: 60px;
+}
+
+#register, #login {
+    background-color: white;
+    height: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+    box-shadow: 3px 3px;
+}
+
+#register {
+    margin-left: 96px;
+}
+
+#login {
+    margin-left: 81px;
+}
+

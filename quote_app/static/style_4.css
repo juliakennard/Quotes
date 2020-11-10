@@ -1,0 +1,63 @@
+#wrapper {
+    width: 970px;
+    margin: 0px auto;
+    font-family: sans-serif;
+}
+
+#header_left, #header_right {
+    display: inline-block;
+    margin-bottom: 40px;
+}
+
+#back {
+    margin-left: 550px;
+}
+
+#logout {
+    background-color: white;
+    height: 25px;
+    padding-left: 10px;
+    padding-right: 10px;
+    box-shadow: 3px 3px;
+    margin-left: 30px;
+}
+
+#registration, #login_user {
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 150px;
+}
+
+label, input {
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+input {
+    border: 2px solid black;
+    margin-left: 10px;
+    height: 20px;
+}
+
+#update {
+    background-color: white;
+    height: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+    box-shadow: 3px 3px;
+    margin-left: 91px;
+}
+
+.form {
+    margin-bottom: 0px;
+}
+
+#last_name_input {
+    margin-left: 11px;
+}
+
+#email_input {
+    margin-left: 48px;
+}
+
+

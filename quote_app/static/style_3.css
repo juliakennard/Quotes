@@ -1,0 +1,38 @@
+#wrapper {
+    width: 970px;
+    margin: 0px auto;
+    font-family: sans-serif;
+    padding: 20px 50px;
+}
+
+#user_name, #header_right {
+    display: inline-block;
+}
+
+#back {
+    margin-left: 550px;
+}
+
+#logout {
+    background-color: white;
+    height: 25px;
+    padding-left: 10px;
+    padding-right: 10px;
+    box-shadow: 3px 3px;
+    margin-left: 30px;
+}
+
+#quote {
+    display: inline-block;
+}
+
+#quotes_header {
+    margin-left: 133px;
+}
+
+#quote_content {
+    border: 2px solid black;
+    padding: 0px 10px 10px 10px;
+    width: 300px;
+    margin-bottom: 20px;
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>User Quotes</title>
+        {% load static %}
+        <link rel="stylesheet" href="{% static 'style_3.css' %}">
+    </head>
+    <body>
+        <div id="wrapper">
+
+            <div id="header">
+                <p id = "user_name">{{user.first_name}} {{user.last_name}}'s Quotes</p>
+                <div id = "header_right">
+                    <a id = "back" href="/quotes">Back</a>
+                    <a id = "logout_link" href="/logout"><button id = "logout">Logout</button></a>
+                </div>
+            </div>
+
+            <div id = "quote">
+
+                <p id = "quotes_header">Quotes</p>
+
+                {% for quote in all_quotes %}
+
+                    {% if quote.user.id == user.id %}
+
+                <div id="quote_content">
+                    <p id = "quote_text">{{quote.author}}: "{{quote.quote}}"</p>
+                        
+                    {% endif %}
+
+                </div>
+
+                {% endfor %}
+                
+            </div>
+
+        </div>
+    </body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Edit Account</title>
+        {% load static %}
+        <link rel="stylesheet" href="{% static 'style_4.css' %}">
+    </head>
+    <body>
+        <div id="wrapper">
+
+            <div id="errors">
+                {% if messages %}
+                    <ul>
+                        {% for error in messages %}
+                            <li>{{error}}</li>
+                        {% endfor %}
+                    </ul>
+                {% endif %}
+            </div>
+
+            <div id="header">
+                <p id = "header_left">Edit My Account</p>
+                <div id = "header_right">
+                    <a id = "back" href="/quotes">Back</a>
+                    <a id = "logout_link" href="/logout"><button id = "logout">Logout</button></a>
+                </div>
+            </div>
+
+            <form action="/edit_user" method = "post">
+                {% csrf_token %}
+
+                <div class = "form">
+                    <label for="first_name">First Name</label>
+                    <input id = "first_name_input" type="text" name="first_name" value = {{first_name}}>
+                </div>
+
+                <div class = "form">
+                    <label for="last_name">Last Name</label>
+                    <input id = "last_name_input" type="text" name="last_name" value = {{last_name}}>
+                </div>
+
+                <div class = "form">
+                    <label for="email">Email</label>
+                    <input id = "email_input" type="email" name="email" value = {{email}}>
+                </div>
+
+                <input id = "update" type="submit" value="Update">
+            
+            </form>
+
+        </div>
+    </body>
+</html>
